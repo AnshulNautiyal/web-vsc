@@ -1,0 +1,13 @@
+
+@import './variable.scss';
+@import './common.scss';
+@import './mixin.scss';
+
+
+/* 
+    - Import component scss file 
+*/
+@import './../component/sideBar/sideBar.scss';
+@import './../component/explorer/explorer.scss';
+@import './../component/editor/editor.scss';
+

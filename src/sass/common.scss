@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "codicon";
+  src: url("../static/font/codicon.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.codicon {
+  display: inline-block;
+  font-family: "codicon";
+}
+.codicon-files::before {
+  content: "\EAF0";
+}
+.codicon-search::before {
+  content: "\EA6D";
+}
+.codicon-git-merge::before {
+  content: "\EA68";
+}
+.codicon-bug::before {
+  content: "\EAD8";
+}
+.codicon-extensions::before {
+    content: "\EAE6";
+}
+.codicon-settings-gear::before {
+  content: "\EB51";
+}
+.codicon-live-share::before {
+  content: "\EB18";
+}
+.codicon-chevron-down::before {
+  content: "\EAB4";
+}
+.codicon-chrome-close::before {
+  content: "\EAB8";
+}
