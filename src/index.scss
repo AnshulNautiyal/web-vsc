@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+.vscContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@import "./sass/import.scss";

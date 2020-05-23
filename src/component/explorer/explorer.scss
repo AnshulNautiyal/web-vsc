@@ -1,0 +1,9 @@
+.explorerContainer {
+  width: 35rem;
+  height: 100%;
+  background-color: $vsc-editor-background;
+  &__header {
+    width: 100%;
+    height: 80px;
+  }
+}
