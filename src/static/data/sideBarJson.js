@@ -8,7 +8,7 @@ export default [
     alt: "search icon ",
   },
   {
-    imgPath: `<span class="codicon codicon-git-merge"></span>`,
+    imgPath: `<span class="codicon codicon-git-merge mergeNumber"></span>`,
     alt: "Git merge icon",
   },
   {
