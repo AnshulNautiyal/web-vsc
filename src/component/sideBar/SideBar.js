@@ -6,6 +6,7 @@ export const SideBar = (props) => {
     <div
       className="sideBarContainer__icon"
       dangerouslySetInnerHTML={{ __html: imgPath }}
+      onClick={props.handleAction(1)}
     ></div>
   );
 };

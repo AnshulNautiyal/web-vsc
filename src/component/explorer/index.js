@@ -13,7 +13,7 @@ export class ExplorerParent extends React.PureComponent {
   render() {
     const explorerDom = this._getSideBarDom();
     return (
-      <div className="explorerContainer">
+      <div className="explorerContainer" id="explorerContainer">
         <div className="explorerContainer__header">EXPLORER</div>
         {explorerDom}
       </div>
