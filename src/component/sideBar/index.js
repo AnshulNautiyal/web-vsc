@@ -5,9 +5,9 @@ import sideBarJson from "../../static/data/sideBarJson";
 
 export class SideBarParent extends React.PureComponent {
   _getSideBarDom() {
-    return sideBarJson.map((item) => {
+    return sideBarJson.map((item,index) => {
       const { imgPath = "", alt = "" } = item;
-      return <SideBar imgPath={imgPath} alt={alt} />;
+      return <SideBar imgPath={imgPath} alt={alt} key={index}/>;
     });
   }
   render() {
