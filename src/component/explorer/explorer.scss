@@ -1,9 +1,35 @@
 .explorerContainer {
-  width: 35rem;
+  min-width: 400px;
+  max-width: 400px;
   height: 100%;
-  background-color: $vsc-editor-background;
+  background-color: $vsc-explorer-background;
   &__header {
     width: 100%;
-    height: 80px;
+    height: 50px;
+    font-size: $ft18;
+    @include defaultFlex(row, flex-start);
+    padding-left: 20px;
+    color: white;
+  }
+  &__collapse {
+    font-size: 16px;
+    background-color: $vsc-editor-background;
+    padding: 15px 15px;
+    font-weight: 600;
+    transition: all .3s;
+      @include defaultFlex(row, flex-start);
+      padding-left: 5px;
+      width: 100%;
+      height: 20px;
+      color:white;
+      span {
+        font-size: 20px;
+        padding-right: 5px;
+      }
+      cursor: pointer;
+      &:nth-child(3){
+        border-top: 1px solid $vsc-explorer-collapse-border;
+        border-bottom: 1px solid $vsc-explorer-collapse-border;
+      }
   }
 }

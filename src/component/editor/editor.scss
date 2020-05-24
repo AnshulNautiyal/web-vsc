@@ -1,5 +1,70 @@
 .editorContainer {
     width: 100%;
     height: 100%;
-    background-color: gray;
+    background-color: $vsc-editor-background;
+
+    &__content {
+        height: 100%;
+        &--fileName {
+            background-color: $vsc-explorer-background;
+            width: 100%;
+            height: 50px;
+            @include defaultFlex(row, space-between);
+            div:nth-child(1) {
+                cursor: pointer;
+                background-color: $vsc-editor-background;
+                width: 250px;
+                height: 100%;
+                @include defaultFlex();
+                font-size: 18px;
+                color: white;
+                span {
+                    margin-left: 10px;
+                }
+                svg {
+                    width: 25px;
+                    margin-right: 5px;
+                }
+            }
+            div:nth-child(2) {
+                @include defaultFlex();
+                margin-right: 10px;
+                font-size: 20px;
+                color: white;
+                span {
+                    display: inline-block;
+                    margin-right: 20px;
+                    cursor: pointer;
+                }
+            }
+                
+        }
+        &--edit {
+            @include defaultFlex();
+            height: 100%;
+            div {
+                // background-color: red;
+                height: 100%;
+                width: 70px;
+                @include defaultFlex(column, flex-start);
+                span {
+                    font-size: 20px;
+                    color: $vsc-explorer-collapse-border;
+                    display: inline-block;
+                    padding: 5px;
+                }
+            }
+            textarea {
+                line-height: 1.6;
+                width: 100%;
+                height: 100%;
+                background: #1E1E1E;
+                border: none;
+                outline: none;
+                padding: 10px 30px;
+                font-size: 20px;
+                color: white;
+            }
+        }
+    }
 }
