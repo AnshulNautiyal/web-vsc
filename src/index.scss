@@ -8,6 +8,7 @@
 
 body {
   font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
 }
 
 .vscContainer {
@@ -17,7 +18,7 @@ body {
   flex-direction: column;
 
   &__main {
-    display: flex;;
+    display: flex;
     justify-content: flex-start;
     flex-grow: 1;
   }
