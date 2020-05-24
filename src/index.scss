@@ -13,9 +13,14 @@ body {
 .vscContainer {
   width: 100vw;
   height: 100vh;
-  background-color: red;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+
+  &__main {
+    display: flex;;
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
 }
 
 @import "./sass/import.scss";

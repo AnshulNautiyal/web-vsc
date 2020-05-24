@@ -1,5 +1,5 @@
 .sideBarContainer {
-    min-width: 80px;
+    min-width: 70px;
     height: 100%;
     background-color: $vsc-backGround;
     border: none;
@@ -11,7 +11,7 @@
 
         span {
             color: $vsc-icon-color;
-            font-size: $ft45;
+            font-size: $ft35;
             cursor: pointer;
             &:hover {
                 color: white;
